@@ -4,14 +4,13 @@ Node.js must be installed in your system; script runs from command line:
 All configuration is done from `config.json` file; adding a GUI is not a priority right now.
 
 **query & query_term**  
-   The Calibre query needed to get a list of books to be renamed. You can read more on Calibre queries here:
-[Calibre Search Interface](https://manual.calibre-ebook.com/gui.html#the-search-interface)
+   The Calibre query needed to get a list of books to be renamed. You can read more on Calibre queries here:  
+[Calibre Search Interface](https://manual.calibre-ebook.com/gui.html#the-search-interface)  
    For now only a single field is supported.
 
 **reg_replace**  
    Regex is used to remove unwanted parts in the book name.
-Test your regex [here](https://regexr.com/).
-
+Test your regex [here](https://regexr.com/).  
 *Example*:  
 `"reg_replace":"Microsoft|Word|\\.docx"`  
 will remove all occurances of *Microsoft*, *Word* and *.docx* from the book name.  
