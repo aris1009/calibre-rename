@@ -18,7 +18,7 @@ const calibreRename = (stream = false) => {
       let newName = name.replace(new RegExp(conf.reg_replace, "gi"), ' ').replace(/ +/g, ' ').trim();
       newName = wordCapitalizer(newName);
       let issueNumber = newName.match(/\d+/g) || [];
-      if (conf.padded_numbers_up_to_thousand && issueNumber[0] && issueNumber[0] < 100 && issueNumber[0] > 9) {
+      if (conf.padded_numbers_up_to_thousand && issueNumber[0] && issueNumber[0] < 100 && issueNumber[0] > 1) {
         let padded = issueNumber[0].padStart(3, '0');
         newName = newName.replace(/\d+/g, padded);
       }
@@ -53,7 +53,9 @@ const calibreRename = (stream = false) => {
       if (stream) stream.write(report);
       console.log(report);
     }
-  })
+  });
+
+  if (conf.start_calibre_on_script_end) execSync(`nohup calibre & exit`);
 }
 
 function wordCapitalizer(title) {
