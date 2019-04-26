@@ -1,0 +1,20 @@
+{
+  "query":"tag",
+  "query_term":"Unearthed Arcana",
+  "reg_replace":"-|_|\\.docx|Microsoft|Word",
+  "padded_numbers_up_to_thousand": false,
+
+
+
+  "enable_title_set":true,
+
+
+
+
+
+  "split_str":"\n",
+  "start_calibre_on_script_end": true,
+  "write_to_log":true,
+  "write_to_log_commands":false,
+  "debug":false
+}
