@@ -17,7 +17,7 @@ will remove all occurances of *Microsoft*, *Word* and *.docx* from the book name
 It is case insensitive.
 
 **padded_numbers_up_to_thousand**  
-   If set `true`, will pad numbers 1 - 99, with two or three 0's, assuming the book is part of a series.
+   If set `true`, will pad numbers 1 - 99, with two or three 0's, assuming the book is part of a series.  
 Calibre will sort the books in this order if name is not padded:  
 *Book 1  
 Book 10  
